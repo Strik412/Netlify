@@ -1,30 +1,30 @@
 # Netlify Deployment Project
 
-📋 Project Description
+Project Description
 This is an educational project created to learn about distributed systems and continuous deployment (CD) using GitHub Actions and Netlify.
 
-🎯 What is the application about?
+What is the application about?
 This application is a simple static website that demonstrates:
 
 - Basic Web Development: Pure HTML, CSS, and JavaScript
 - Continuous Integration/Continuous Deployment (CI/CD): Automation with GitHub Actions
 - Hosting Platform: Automatic deployment on Netlify
 
-🏗️ Project Structure
+Project Structure
 Netlify/
 ├── public/
-│   ├── index.html    # Site homepage
-│   ├── styles.css    # CSS styles for the page
-│   └── app.js        # JavaScript functionality
-├── Dockerfile        # Docker configuration to serve static files with nginx
-├── .dockerignore     # Files excluded from Docker builds
-├── netlify.toml      # Netlify publish settings
-├── README.md         # This file
+│   ├── index.html    
+│   ├── styles.css    
+│   └── app.js        
+├── Dockerfile        
+├── .dockerignore    
+├── netlify.toml      
+├── README.md         
 └── .github/
     └── workflows/
-        └── netlify-deploy.yml  # Automatic deployment configuration
+        └── netlify-deploy.yml  
 
-📄 Components
+Components
 1. `index.html`
    - Simple webpage titled "Hello World"
    - Contains a greeting: "Hello World"
@@ -46,7 +46,7 @@ Netlify/
      - Installation: Installs Netlify CLI
      - Deployment: Deploys the `public/` folder to Netlify using authentication token and site id
 
-🚀 Deployment Flow
+Deployment Flow
 
 Deployment to Netlify (Automatic)
 1. The developer pushes changes to the `main` branch.
@@ -79,7 +79,7 @@ docker compose up -d
 docker compose down
 ```
 
-🎓 Educational Purpose
+Educational Purpose
 This project was created for educational purposes to learn about:
 
 - Basic web development (HTML/CSS/JavaScript)
@@ -90,11 +90,11 @@ This project was created for educational purposes to learn about:
 - Distributed systems concepts
 - Containerization with Docker
 
-🐳 Docker Requirements
+Docker Requirements
 - Docker installed (version 20.10 or higher)
 - Docker Compose (included with Docker Desktop)
 
-📝 Notes
+Notes
 - Netlify: The project uses a Netlify token stored in GitHub secrets (`NETLIFY_AUTH_TOKEN`) and the site id (`NETLIFY_SITE_ID`).
 - GitHub Actions: Deployment is fully automatic when secrets are configured.
 - Docker: Uses `nginx:alpine` in the `Dockerfile` to serve static files efficiently.
