@@ -1,3 +1,3 @@
 document.getElementById('alertBtn').addEventListener('click', function () {
-  alert('¡Hola Mundo!');
+  alert('Hello World!');
 });
